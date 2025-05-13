@@ -1,0 +1,174 @@
+/* adminDashboard.css */
+
+body {
+    font-family: 'Segoe UI', 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f4f6fa, #dde1e7);
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1b2a;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 60px);
+    background-color: #1b263b;
+    color: white;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 5%;
+}
+
+.navbarRight{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   
+}
+
+.navbarRight a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sidebar a {
+    color: #c0d6df;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.Dashboard {
+    margin-left: 240px;
+    padding: 2rem;
+    margin-top: 35%;
+}
+
+.statCards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #0d1b2a;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.recentApplication {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.recentApplication table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.recentApplication th,
+.recentApplication td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.recentApplication th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+
+.button {
+    background-color: #0077b6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #023e8a;
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #0d1b2a;
+}
+
+.footer {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}

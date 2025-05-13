@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right top, #f0f4ff, #e0f7fa, #e3f2fd) ;
+}
+
+header {
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right top, #f0f4ff, #e0f7fa, #e3f2fd, #f8bbd0);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+   width: 100%;
+
+}
+
+
+.navbar h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #4a148c;
+}
+
+.navbar .button {
+    padding: 10px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #7b1fa2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.navbar .button:hover {
+    background-color: #6a1b9a;
+}
+
+.registerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px 40px;
+    /* Add top padding to push below navbar */
+    min-height: 100vh;
+    color: #333;
+    margin-top: 90%;
+}
+
+
+.formTitle {
+    font-size: 2rem;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registerForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 40px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.formSection {
+    margin-bottom: 30px;
+}
+
+.formSection h3 {
+    color: #6a1b9a;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+input[type="radio"] {
+    margin-left: 10px;
+    
+    
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.center {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.center .button {
+    padding: 12px 28px;
+  
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #7b1fa2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.center .button:hover {
+    background-color: #6a1b9a;
+}

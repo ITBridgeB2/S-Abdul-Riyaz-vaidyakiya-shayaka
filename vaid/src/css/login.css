@@ -1,0 +1,146 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+/* Full page background */
+body, html {
+    background: linear-gradient(to right top, #f0f4ff, #e0f7fa, #e3f2fd, #f8bbd0) no-repeat;
+}
+
+/* Navbar styling */
+.loginNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.loginNavbar h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+.loginNavbar .button {
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.loginNavbar .button:hover {
+    background-color: #6a1b9a;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #6a1b9a;
+}
+
+/* Login form */
+form {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 12px 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    border-color: #7b1fa2;
+}
+
+/* Horizontal button container */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button.center {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button.center:hover {
+    background-color: #6a1b9a;
+}
+
+a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    background-color: white;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%236a1b9a" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+select:focus {
+    border-color: #7b1fa2;
+}
