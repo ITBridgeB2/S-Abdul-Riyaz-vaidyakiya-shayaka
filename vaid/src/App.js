@@ -10,6 +10,7 @@ import AdminHospitalComponent from "./component/Admin/adminHospitals";
 import AdminManagerComponent from "./component/Admin/adminManager";
 import ManagerDashboardComponent from "./component/manager/managerDashboard";
 import MedicalHistoryComponent from './component/user/userMedicalRecords';
+import  ManagerEmgMessageComponent from './component/manager/managerEmgMessages';
 // 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/adminManager" element={<AdminManagerComponent/>}/>
       <Route path="/managerDashboard" element={<ManagerDashboardComponent/>}/>
       <Route path="/medical-history" element={<MedicalHistoryComponent/>} />
+      <Route path="/EmgMsg" element={< ManagerEmgMessageComponent/>} />
       
     </Routes>
     </div>

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "./../css/managerEmgMessages.css";
-
+import "../../css/managerDashboard.css";
+import { useNavigate } from "react-router-dom";
 function ManagerEmgMessageComponent() {
     const [popupData, setPopupData] = useState(null);
+     const navigate = useNavigate();
 
     const messages = [
         {
@@ -27,6 +28,11 @@ function ManagerEmgMessageComponent() {
         setPopupData(null);
     };
 
+     const handleNavigate = () =>{
+navigate("/managerDashboard")
+    }
+
+
     return (
         <div>
             <header>
@@ -38,9 +44,9 @@ function ManagerEmgMessageComponent() {
 
             <main>
                 <div className="sidebar">
-                    <a>Home</a>
-                    <a>Dashboard</a>
-                    <a>Patients</a>
+                  
+                    <a onClick={handleNavigate}>Dashboard</a>
+                    
                     <a>Emergency Message</a>
                 </div>
 

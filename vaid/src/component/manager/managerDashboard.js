@@ -60,6 +60,10 @@ function ManagerDashboardComponent() {
         navigate("/login"); // Make sure this route exists
     };
 
+    const handleNavigate = () =>{
+navigate("/EmgMsg")
+    }
+
     return (
         <div>
             <header>
@@ -77,7 +81,7 @@ function ManagerDashboardComponent() {
                 <div className="sidebar">
 
                     <a>Dashboard</a>
-                    <a>Emergency Message</a>
+                    <a onClick={handleNavigate}>Emergency Message</a>
 
                 </div>
 
@@ -99,20 +103,19 @@ function ManagerDashboardComponent() {
                         <table>
                             <thead>
                                 <tr><th>Name</th><th>Email</th><th>Contact</th><th>Disease</th><th>Details</th></tr>
-                                <tr><th>Name</th><th>Email</th><th>Contact</th><th>Disease</th></tr>
+                                {/* <tr><th>Name</th><th>Email</th><th>Contact</th><th>Disease</th></tr> */}
                             </thead>
                             <tbody>
                                 {patients.map((patient, index) => (
                                     <tr key={index}>
                                         <td>{patient.name}</td>
                                         <td>{patient.email}</td>
-                                        <td>{patient.contact}</td>
+                                      <td>{patient.tel}</td>
                                         <td>{patient.disease}</td>
                                         <td>
                                             <button className="button" onClick={() => openPopup(patient)}>View</button>
                                         </td>
-                                        <td>{patient.tel}</td>
-                                        <td>{patient.disease}</td>
+                                        
                                         {/* <td>
                                             <button className="button" onClick={() => openPopup(patient)}>View</button>
                                         </td> */}
